@@ -15,15 +15,20 @@ export const options = {
 
 export default function () {
 
-    const token = login("jscho", "1234");
+    const user = users[__VU % users.length];
 
-    getProducts(token);
+    //const token = login("jscho", "1234");
+    const token = login(user.userId, user.password);
 
-    sleep(1);
+     sleep(3);
+     
+     getProducts(token);
+
+    sleep(2);
 
     addCart(token);
 
-    sleep(1);
+    sleep(5);
 
     order(token);
 
