@@ -1,0 +1,6 @@
+results/
+*.json
+*.html
+*.csv
+
+.vscode/
