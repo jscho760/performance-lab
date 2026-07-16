@@ -1,113 +1,140 @@
-Performance Engineering Lab
-=====================================
+# 🚀 Performance Engineering Lab
 
-Performance Testing Platform using
+A modern Performance Engineering Lab built with Docker, k6, Prometheus and Grafana.
 
-✔ k6
-✔ Prometheus
-✔ Grafana
-✔ Docker
-✔ JWT Mock API
+---
 
--------------------------------------
-Architecture
--------------------------------------
+## 📌 Overview
 
-            +----------------+
-            |      k6        |
-            +----------------+
-                    |
-                    |
-        Prometheus Remote Write
-                    |
-            +----------------+
-            | Prometheus     |
-            +----------------+
-                    |
-            +----------------+
-            |   Grafana      |
-            +----------------+
-                    |
-             Performance Dashboard
+This project demonstrates a complete performance testing platform using modern open-source technologies.
 
--------------------------------------
-Features
--------------------------------------
+### Technology Stack
 
-✔ Load Test
+- k6
+- Docker
+- Prometheus
+- Grafana
+- Node.js
+- JWT Authentication
 
-✔ Stress Test
+---
 
-✔ Spike Test
+## 🏗 Architecture
 
-✔ JWT Authentication
+```
+              +-------------+
+              |     k6      |
+              +-------------+
+                     |
+                     |
+      Prometheus Remote Write
+                     |
+             +---------------+
+             | Prometheus    |
+             +---------------+
+                     |
+             +---------------+
+             |   Grafana     |
+             +---------------+
+                     |
+              Performance Dashboard
+```
 
-✔ REST API
+---
 
-✔ Docker Compose
+## 📁 Project Structure
 
-✔ Real-time Monitoring
-
--------------------------------------
-Project Structure
--------------------------------------
-
+```
 performance-lab/
 
 ├── api-server/
-
+│
 ├── grafana/
-
+│
 ├── prometheus/
-
+│
 ├── k6/
-
 │   ├── scripts/
-
 │   ├── scenarios/
-
 │   └── lib/
-
+│
 ├── docker-compose.yml
-
+│
 └── README.md
+```
 
--------------------------------------
-How to Run
--------------------------------------
+---
 
+## 🚀 Getting Started
+
+### Start Environment
+
+```bash
 docker compose up -d
+```
 
+### Run Load Test
+
+```bash
 k6 run scripts/shopping.js
+```
 
--------------------------------------
-Roadmap
--------------------------------------
+---
 
-Sprint 1
-JWT Authentication
+## 📊 Features
 
-Sprint 2
-Shopping Scenario
+- REST API
+- JWT Authentication
+- Shopping API
+- Performance Test
+- Load Test
+- Stress Test
+- Spike Test
+- Docker Compose
+- Real-time Monitoring
+- Grafana Dashboard
 
-Sprint 3
-Prometheus Metrics
+---
 
-Sprint 4
-Grafana Dashboard
+## 📅 Roadmap
 
-Sprint 5
-CI/CD
+### Sprint 1
 
-Sprint 6
-Kubernetes
+- JWT Authentication
 
--------------------------------------
-Author
--------------------------------------
+### Sprint 2
 
-Jin Sung Cho
+- Shopping API
 
-Performance Engineering
+### Sprint 3
+
+- Prometheus Integration
+
+### Sprint 4
+
+- Grafana Dashboard
+
+### Sprint 5
+
+- GitHub Actions
+
+### Sprint 6
+
+- Kubernetes
+
+---
+
+## 👨‍💻 Author
+
+**Jin Sung Cho**
+
+Performance Engineer
 
 25+ Years Experience
+
+Interested in
+
+- Performance Engineering
+- Observability
+- AI
+- Cloud Native
